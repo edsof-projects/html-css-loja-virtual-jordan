@@ -99,7 +99,6 @@ main{
     width: 590px;
     height: 100%;
     margin-bottom: 72px; 
-    /* background-color: yellow; */
 }
 
 .products .heading__products h3{
@@ -110,11 +109,11 @@ main{
 }
 
 .products .heading__products p{
-    font-size: 24px;
+    font-size: 24px;    
+    text-align: center;
 }
 
 .products .listing__products{
-    /* background-color: #08a35d; */
     width: 100%;
     height: 100%;
     
