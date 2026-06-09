@@ -96,7 +96,7 @@ main{
 }
 
 .products .heading__products{
-    width: 590px;
+    max-width: 590px;
     height: 100%;
     margin-bottom: 72px; 
 }
@@ -126,8 +126,9 @@ main{
 }
 
 .products .listing__products .card__product{
-    width: 384px;
+    width: 336px;
     height: 326px;
+    flex-basis: 336px;
 }
 
 .products .listing__products .card__product figure{
@@ -159,4 +160,91 @@ main{
     font-size: 18px;
     line-height: 28px;
     font-family: "Space Grotesk", sans-serif;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    header .top-fixed{
+        height: 41px;
+        font-size: 16px;
+    }
+
+    .hero{
+        height: 350px;
+    }
+
+    .hero .hero__content h1{
+        font-size: 18px;
+    }
+
+    .hero .hero__content h2{
+         font-size: 24px;
+    }
+
+    .hero .hero__content p{
+         font-size: 18px;
+         line-height: 28px;
+    }
+
+    .products .heading__products{
+        padding-inline: 20px;
+    }
+
+    .products .heading__products h3{
+       font-size: 24px; 
+    }
+
+    .products .heading__products p{
+       font-size: 16px; 
+       line-height: 26px;
+    }
+
+    .products .listing__products{
+        margin-block: 32px;
+        gap: 32px;
+    }
+
+    .card__product .card__product_details h4{
+        font-size: 18px;
+    }
+
+    .card__product .card__product_details h5{
+        font-size: 16px;
+    }
+
+    .card__product .card__product_price h6{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header .top-fixed{
+        height: 39px;
+    }
+
+    .hero .hero__content p{
+         font-size: 16px;
+         line-height: 26px;
+    }
+
+    .products .heading__products h3{
+       font-size: 20px; 
+       padding: 14px;
+    }
+
+    .products .heading__products p{
+       font-size: 14px; 
+       line-height: 24px;
+    }
+
+    .products .listing__products{
+        margin-block: 24px;
+        gap: 32px;
+    }
+
+    .card__product .card__product_details h4{
+        font-size: 16px;
+    }
+    
 }
